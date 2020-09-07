@@ -11,7 +11,7 @@
 ### `⚒️ Tools ⚒️`
 
 * HTML, CSS, JavaScript;
-* JQuery 3.6 version or later;
+* JQuery 3.6 version or later, JChart and Slick;
 * Any Browser (tested succesfully in Chrome, Opera and OperaGX);
 * Eclipse IDE;
 * Java 8 version or later;
@@ -29,7 +29,17 @@
 ----
 ### `📝 Examples 📝`
 
-*
+> Sort Integer Numbers
+
+* Go to *Ordenação - Inteiros*;
+* Generate Random Numbers, Import txt file (use comma to separate each data) or Tip you the datas;
+* Click in *Ordenar* button and see the result.
+
+> Sort Strings
+
+* Go to *Ordenação - Strings*;
+* Import txt file (use comma to separate each data) or Tip you the datas;
+* Click in *Ordenar* button and see the result.
 
 ----
 ### `🎁 Bonus 🎁`
