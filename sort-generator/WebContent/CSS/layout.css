@@ -1,0 +1,373 @@
+* { padding: 0;	margin: 0; }
+
+body {
+    display: grid;
+    grid-template-areas: "nav" "content" "footer";
+    grid-template-rows: 50px calc(100vh - 100px) 50px;    
+}
+
+.mainNav { 
+    grid-area: nav; 
+    background: #008000; 
+    z-index: 10000;
+}
+
+.mainNav ul {
+    list-style: none;
+    position: relative;
+}
+.mainNav ul li {
+    float: left;
+    width: 150px;
+}
+.mainNav a {
+    color: #fff;
+    font-family: 'Arial';		
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    height: 20px;
+    padding: 15px;
+}
+
+.mainNav ul ul {
+    display: none;
+}
+.mainNav ul li:hover ul {
+    display: block;
+}
+.mainNav ul a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+}
+.mainNav ul ul li a {
+    background-color: #32CD32;
+}
+.mainNav ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    padding: 5px 0;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    width: 100vw;
+    height: 40px;	
+    display: none;
+}
+
+.mainContent { 
+    grid-area: content; 
+    background: #FFDAB9;/*#ccc;*/ 
+    padding: 20px;
+    overflow: auto;
+}
+
+.mainFooter { 
+    grid-area: footer; 
+    background: #555;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+#dados {
+    position: relative;    
+    height: calc(100% - 80px);
+    overflow: auto;
+}
+
+#dados table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;    
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+}
+
+#dados table td, #dados table th {
+    border: 1px solid #ddd;
+    padding: 0 8px;
+}
+
+#dados table tr:nth-child(even){background-color: #f2f2f2;}
+
+#dados table tr:hover {background-color: #32CD32/*#ddd*/;}
+
+#dados table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#dados table td {
+	text-align: center;
+}
+
+form {    
+    margin: 15px 0;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+
+form label {
+    margin-left: 5px;
+}
+
+.formField  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px black;
+    outline: none;
+}
+
+.formFieldTwo {
+	width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px black;
+    outline: none;
+}
+
+textarea.formField {
+    resize: none;
+    height: 150px;
+}
+
+fieldset {
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.botao {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 8px 0;    
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    background-color: #4CAF50;
+    color: white;
+    
+    box-shadow: 2px 2px 1px 1px black;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+    width: 100px;
+    left: 50%; 
+}
+
+.botao:active {
+	box-shadow: 0px 0px 0px 0px black, inset 2px 2px 1px 1px black;
+	transform: translate(5%, 5%);
+}
+
+#btnNovo {
+    width: 100px;    
+    background-color: #4CAF50;
+    color: white;    
+}
+
+#btnNovo:hover {    
+   background-color: #45a049;
+}
+
+#btnEditar {
+    margin: 0;    
+    width: 100%;
+    background-color: #3980c6;
+    color: white;
+}
+
+#btnEditar:hover {
+    background-color: #1980e6;
+}
+
+#btnSalvar {
+    width: 100%;    
+    background-color: #4CAF50;
+    color: white;    
+}
+#btnSalvar:hover {
+    background-color: #45a049;
+}
+
+#btnExcluir {
+    width: 100%;
+    background-color: #ff4d4d;
+    color: white;
+}
+#btnExcluir:hover {
+    background-color: #ff3333;
+}
+
+#btnCancelar {
+    width: 100%;
+    background-color: #3980c6;
+    color: white;
+}
+#btnCancelar:hover {
+    background-color: #1980e6;
+}
+
+.refFieldSet {
+    outline: none;
+}
+
+.refFieldSet legend {
+	font-size: 55px;
+}
+
+.refFieldSet label {
+	display: block;
+	font-size: 30px;
+	/* Quebra as palavras para n�o ultrapassarem o limite dos campos
+		break-all : n�o importa a posi��o, sempre ir� quebrar a palavra
+		break : n�o quebra palavras ao meio, ou seja, s� quebrar� o conte�do ap�s
+	escrever toda a palavra
+	 */
+	word-break: break-all;
+}
+
+.refFieldSet label a {
+	text-decoration: none;
+}
+
+.refNome {
+	color: black;
+}
+
+.refLink:hover {
+	color: #32CD32;
+}
+
+#dados_aleatorios {
+	width: 100px;
+}
+
+.alerta {
+	color: green;
+	font-size: 20px;
+}
+
+hr {
+	border: 2px dashed lightskyblue;
+	border-radius: 1px;
+}
+
+.itemLista {
+	margin-left: 25px;
+}
+
+.gravar, .remover {
+	margin-left: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 15px;
+    display: inline;
+}
+
+.gravar {
+	color: green;
+}
+
+.remover {
+	color: red;
+}
+
+#lista {
+	border: 2px dashed black;
+}
+
+.radioInput {
+	display: inline;
+}
+
+video {
+	box-shadow: 3px 3px 3px 3px black;
+}
+
+p {
+	text-align: justify;
+	font-size: 20px;
+}
+
+acronym {
+	color: lightskyblue;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        grid-template-areas: "content" "footer";
+        grid-template-rows: calc(100vh - 50px) 50px;		
+    }
+    #bt_menu:checked ~ .mainNav {
+        margin-left: 0;
+        width: 100%;
+    }
+    label[for="bt_menu"] {
+        grid-area: content;
+        display: block;
+        z-index: 1000;
+    }
+    .mainNav {
+        position: absolute;
+        transition: all .4s;
+        grid-area: content;
+        margin-left: -100%;
+        margin-top: 50px;
+        z-index: 1000;
+    }
+    .mainNav ul li {
+        width: 100%;
+        float: none;
+    }
+    .mainNav ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .mainNav ul li:hover ul {
+        height: auto;
+        max-height: 500px;
+    }
+    .mainContent {
+        padding-top: 70px;
+    }
+    
+    .formFieldTwo {
+    	width: 100%;
+    }
+    
+    .refFieldSet legend {
+		font-size: 25px;
+	}
+
+	.refFieldSet label {
+		display: block;
+		font-size: 20px;
+	}
+}

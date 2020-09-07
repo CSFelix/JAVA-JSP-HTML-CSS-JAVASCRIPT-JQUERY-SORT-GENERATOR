@@ -1,0 +1,1 @@
+<footer class="mainFooter">Sort Generator, Divilix - Copyright 2019</footer>
