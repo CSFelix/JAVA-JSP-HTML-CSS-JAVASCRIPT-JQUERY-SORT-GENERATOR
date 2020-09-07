@@ -44,3 +44,4 @@
 being 'n' the number of elements to sort.
 ```
 
+![Assintotic-Functions](assintotica.png)
