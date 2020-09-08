@@ -1,4 +1,4 @@
-# 🌟 Project Name 🌟
+# 🌟 Sort Generator 🌟
 
 ----
 ### `❓ What's it? ❓`
