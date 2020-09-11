@@ -55,3 +55,12 @@ being 'n' the number of elements to sort.
 ```
 
 ![Assintotic-Functions](assintotica.png)
+
+----
+### `✉️ Contact ✉️`
+
+> **Email:** `gabrielfelix08@outlook.com`
+
+> **Linkedin:** `---`
+
+> **Instagram:** `---`
