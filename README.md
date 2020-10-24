@@ -59,7 +59,7 @@ being 'n' the number of elements to sort.
 ----
 ### `✉️ Contact ✉️`
 
-> **Email:** `gabrielfelix08@outlook.com`
+> **Email:** `csfelix08@gmail.com`
 
 > **Linkedin:** `---`
 
