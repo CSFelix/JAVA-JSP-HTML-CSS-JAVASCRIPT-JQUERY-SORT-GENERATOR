@@ -61,6 +61,6 @@ being 'n' the number of elements to sort.
 
 > **Email:** `csfelix08@gmail.com`
 
-> **Linkedin:** `---`
+> **Linkedin:** `linkedin.com/in/gabriel-felix-dos-santos-7443151bb/`
 
-> **Instagram:** `instagram.com/c0deplus`
+> **Instagram:** `instagram.com/c0deplus/`
